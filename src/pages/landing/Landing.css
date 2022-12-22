@@ -125,7 +125,7 @@
   left: 49%;
 }
 .chicken-div img:nth-child(4) {
-  right: 14%;
+  right: 20%;
   z-index: -1;
 }
 .chicken-div img:nth-child(5) {
@@ -193,14 +193,14 @@
     left: 0%;
   }
   .chicken-div img:nth-child(2) {
-    left: 15%;
+    left: 16%;
   }
   .chicken-div img:nth-child(3) {
     transform: translateX(-50%);
-    left: 49%;
+    left: 53%;
   }
   .chicken-div img:nth-child(4) {
-    right: 7%;
+    right: 9%;
   }
   .chicken-div img:nth-child(5) {
     right: 0%;
@@ -232,11 +232,23 @@
     max-width: 375px;
     width: 100%;
   }
+  .chicken-div img {
+    height: 180px;
+  }
+  .chicken-div img:nth-child(1) {
+    left: 0%;
+  }
   .chicken-div img:nth-child(2) {
-    left: 10%;
+    left: 13%;
+  }
+  .chicken-div img:nth-child(3) {
+    left: 50%;
   }
   .chicken-div img:nth-child(4) {
-    right: 5%;
+    right: 10%;
+  }
+  .chicken-div img:nth-child(5) {
+    right: 0%;
   }
   .landing-div > .left-btns {
     display: none;
