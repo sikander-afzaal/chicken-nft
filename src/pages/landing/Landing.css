@@ -196,9 +196,11 @@
   flex-direction: column;
   position: absolute;
   z-index: 4;
-  left: 0;
+  left: 50%;
+  width: 100%;
+  max-width: 1400px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 .btn-div {
   position: relative;
@@ -226,9 +228,10 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.center-landing > .left-btns {
+.menu-toggle {
   display: none;
 }
+
 @media screen and (max-width: 750px) {
   .landing-div {
     height: auto;
@@ -317,17 +320,45 @@
   .chicken-div img:nth-child(5) {
     right: 0%;
   }
-  .landing-div > .left-btns {
-    display: none;
-  }
-  .center-landing > .left-btns {
-    display: flex;
-    position: static;
-    transform: none;
-    margin-top: -40px;
-    margin-bottom: 30px;
-  }
+
   .btn-div {
     margin: -70px 0px;
+  }
+  .menu-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: block;
+    color: white;
+    z-index: 20;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  .left-btns {
+    position: fixed;
+    top: 0;
+    left: -500px;
+    transition: all 1s ease-in-out;
+    height: 100vh;
+    background-color: #0b8179;
+    width: 340px;
+    transform: none;
+    z-index: 19;
+    padding-top: 90px;
+    overflow-y: auto;
+  }
+  .active-side {
+    left: 0;
+  }
+  .overlay {
+    background-color: black;
+    z-index: 11;
+    opacity: 0.6;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
   }
 }
