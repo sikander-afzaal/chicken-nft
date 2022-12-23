@@ -347,18 +347,4 @@
     padding-top: 90px;
     overflow-y: auto;
   }
-  .active-side {
-    left: 0;
-  }
-  .overlay {
-    background-color: black;
-    z-index: 11;
-    opacity: 0.6;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    cursor: pointer;
-    height: 100%;
-  }
 }

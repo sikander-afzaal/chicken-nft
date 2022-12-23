@@ -2,6 +2,7 @@ import "./Landing.css";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -22,17 +23,17 @@ const Landing = () => {
       <img src="/egg4.png" alt="" className="floating egg4" />
       <img src="/egg5.png" alt="" className="floating egg5" />{" "}
       <div className={`left-btns ${menuToggle ? "active-side" : ""}`}>
-        <div className="btn-div">
+        <Link to={"/"} className="btn-div">
           <img src="/deck.png" alt="" className="btn-bg deck" />
-        </div>
+        </Link>
         <div className="btn-div">
           <img src="/cluckers.png" alt="" className="btn-text" />
           <img src="/egg-btn.png" alt="" className="btn-bg" />
         </div>
-        <div className="btn-div">
+        <Link to={"/traits"} className="btn-div">
           <img src="/traits.png" alt="" className="btn-text" />
           <img src="/egg-btn.png" alt="" className="btn-bg" />
-        </div>
+        </Link>
         <div className="btn-div">
           <img src="/my.png" alt="" className="btn-text" />
           <img src="/egg-btn.png" alt="" className="btn-bg" />

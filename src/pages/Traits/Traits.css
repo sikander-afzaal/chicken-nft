@@ -1,0 +1,118 @@
+.traits-wrapp {
+  background-color: #0b8179;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 30px;
+}
+.traits-div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  max-width: 1600px;
+  column-gap: 70px;
+  height: 100%;
+  padding-inline: 20px;
+}
+.traits-sidebar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.main-traits {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  gap: 80px;
+}
+.main-traits > h2 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+.trait-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+.trait-box h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+.trait-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+}
+.trait {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 140px;
+  gap: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+.trait img {
+  border-radius: 10px;
+  max-width: 100%;
+  aspect-ratio: 1/1;
+}
+.trait p {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+@media screen and (max-width: 900px) {
+  .trait-row {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .traits-div {
+    grid-template-columns: 1fr;
+  }
+  .traits-sidebar {
+    position: fixed;
+    left: -700px;
+    top: 0;
+    z-index: 19;
+    background-color: #0b8179;
+    width: 350px;
+    transition: all 1s ease-in-out;
+  }
+  .traits-wrapp .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+    color: white;
+    z-index: 21;
+  }
+  .trait-box h3 {
+    font-size: 22px;
+  }
+  .main-traits {
+    gap: 50px;
+  }
+}

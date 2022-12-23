@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 .container {
   display: flex;
@@ -9,4 +11,18 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
+}
+.active-side {
+  left: 0;
+}
+.overlay {
+  background-color: black;
+  z-index: 11;
+  opacity: 0.6;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
 }
