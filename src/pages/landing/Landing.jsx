@@ -3,9 +3,17 @@ import "./Landing.css";
 const Landing = () => {
   return (
     <div className="container landing-wrapp">
-      <img src="/floating.png" alt="" />
+      {/* <img src="/floating.png" className="bg" alt="" /> */}
+      <img src="/egg1.png" alt="" className="floating egg1" />
+      <img src="/egg2.png" alt="" className="floating egg2" />
+      <img src="/egg3.png" alt="" className="floating egg3" />
+      <img src="/egg4.png" alt="" className="floating egg4" />
+      <img src="/egg5.png" alt="" className="floating egg5" />
       <div className="landing-div">
         <div className="left-btns">
+          <div className="btn-div">
+            <img src="/deck.png" alt="" className="btn-bg deck" />
+          </div>
           <div className="btn-div">
             <img src="/cluckers.png" alt="" className="btn-text" />
             <img src="/egg-btn.png" alt="" className="btn-bg" />
@@ -32,6 +40,9 @@ const Landing = () => {
             <img src="/mint.png" alt="" className="mint-bg" />
           </div>
           <div className="left-btns">
+            <div className="btn-div">
+              <img src="/deck.png" alt="" className="btn-bg deck" />
+            </div>
             <div className="btn-div">
               <img src="/cluckers.png" alt="" className="btn-text" />
               <img src="/egg-btn.png" alt="" className="btn-bg" />
