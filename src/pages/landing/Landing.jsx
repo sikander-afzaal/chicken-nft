@@ -35,10 +35,10 @@ const Landing = () => {
           <img src="/traits.png" alt="" className="btn-text" />
           <img src="/egg-btn.png" alt="" className="btn-bg" />
         </Link>
-        <div className="btn-div">
+        <Link to={"/cluck"} className="btn-div">
           <img src="/my.png" alt="" className="btn-text" />
           <img src="/egg-btn.png" alt="" className="btn-bg" />
-        </div>
+        </Link>
       </div>
       <div className="landing-div">
         <div className="connect-div">
