@@ -5,6 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Landing = () => {
+  const [mintAmount, setMintAmount] = useState(1);
   const [menuToggle, setMenuToggle] = useState(false);
   return (
     <div className="container landing-wrapp">
@@ -48,9 +49,39 @@ const Landing = () => {
         <div className="center-landing">
           <img src="/logo.png" alt="" className="logo" />
           <img src="/genesis.png" alt="" className="genesis" />
-          <div className="mint-div">
-            <img src="/mint-text.png" alt="" className="mint-text" />
-            <img src="/mint.png" alt="" className="mint-bg" />
+          <div className="mint-wrapp">
+            <div className="mint-div">
+              <img src="/mint-text.png" alt="" className="mint-text" />
+              <img src="/mint.png" alt="" className="mint-bg" />
+            </div>
+            <div className="mint-amount">
+              <div className="calc-div">
+                <p
+                  onClick={() => {
+                    setMintAmount((prev) => {
+                      if (prev < 10) {
+                        return prev + 1;
+                      } else return prev;
+                    });
+                  }}
+                >
+                  +
+                </p>
+                <p
+                  onClick={() => {
+                    setMintAmount((prev) => {
+                      if (prev > 1) {
+                        return prev - 1;
+                      }
+                      return prev;
+                    });
+                  }}
+                >
+                  -
+                </p>
+              </div>
+              <h3 className="amount">{mintAmount}</h3>
+            </div>
           </div>
 
           <div className="chicken-div">

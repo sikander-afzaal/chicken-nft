@@ -111,7 +111,7 @@
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
-  padding-top: 10vh;
+  padding-top: 6vh;
 }
 .logo {
   width: 100%;
@@ -127,6 +127,7 @@
 .mint-div {
   position: relative;
   cursor: pointer;
+  width: 100%;
   margin-top: -20px;
   transition: all 0.5s ease-in-out;
 }
@@ -134,9 +135,8 @@
   transform: scale(1.1);
 }
 .mint-bg {
-  width: 100%;
+  width: 40vh;
   object-fit: contain;
-  max-width: 40vh;
 }
 .mint-text {
   position: absolute;
@@ -196,11 +196,9 @@
   flex-direction: column;
   position: absolute;
   z-index: 4;
-  left: 50%;
-  width: 100%;
-  max-width: 1400px;
+  left: 10%;
   top: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateY(-50%);
 }
 .btn-div {
   position: relative;
@@ -231,7 +229,53 @@
 .menu-toggle {
   display: none;
 }
-
+.mint-amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  margin-top: -20px;
+  position: relative;
+  z-index: 20;
+}
+.mint-wrapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calc-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.calc-div p {
+  border-radius: 50%;
+  background-color: #0b8179;
+  width: 6vh;
+  line-height: 1;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+  font-size: 3vh;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+  font-weight: bold;
+}
+.amount {
+  width: 9vh;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #0b8179;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  font-size: 4vh;
+  color: white;
+}
 @media screen and (max-width: 750px) {
   .landing-div {
     height: auto;
@@ -290,6 +334,12 @@
   }
   .egg5 {
     right: 0;
+  }
+  .left-btns {
+    left: 0%;
+  }
+  .mint-wrapp {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 480px) {
