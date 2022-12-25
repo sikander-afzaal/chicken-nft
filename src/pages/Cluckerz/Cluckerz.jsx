@@ -17,13 +17,13 @@ const Cluckerz = () => {
         <FiMenu className="menu-toggle" onClick={() => setMenuToggle(true)} />
       )}
       <div className={`left-btns ${menuToggle ? "active-side" : ""}`}>
-        <Link to={"/"} className="btn-div">
+        <a href="#" className="btn-div">
           <img src="/deck.png" alt="" className="btn-bg deck" />
-        </Link>
-        <div className="btn-div">
+        </a>
+        <Link to="/" className="btn-div">
           <img src="/cluckers.png" alt="" className="btn-text" />
           <img src="/egg-btn.png" alt="" className="btn-bg" />
-        </div>
+        </Link>
         <Link to={"/traits"} className="btn-div">
           <img src="/traits.png" alt="" className="btn-text" />
           <img src="/egg-btn.png" alt="" className="btn-bg" />
