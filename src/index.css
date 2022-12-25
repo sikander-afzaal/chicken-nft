@@ -5,12 +5,19 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+@font-face {
+  font-family: Tenar;
+  src: url("/tenar-font.otf");
+}
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
+}
+.tenar {
+  font-family: "Tenar", "sans-serif";
 }
 .active-side {
   left: 0;

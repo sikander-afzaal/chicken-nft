@@ -97,8 +97,9 @@
     left: -700px;
     top: 0;
     z-index: 19;
-    background-color: #0b8179;
-    width: 350px;
+    background-color: #0b8179bd;
+    width: 300px;
+    backdrop-filter: blur(5px);
     transition: all 1s ease-in-out;
   }
   .traits-wrapp .menu-toggle {
@@ -116,5 +117,11 @@
   }
   .main-traits {
     gap: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .traits-sidebar {
+    width: 100%;
+    align-items: center;
   }
 }

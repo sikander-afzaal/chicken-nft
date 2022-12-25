@@ -9,3 +9,13 @@
   isolation: isolate;
   overflow: hidden;
 }
+.my-text {
+  width: 53vw;
+  max-width: 880px;
+  object-fit: contain;
+}
+@media screen and (max-width: 450px) {
+  .my-text {
+    width: 100vw;
+  }
+}

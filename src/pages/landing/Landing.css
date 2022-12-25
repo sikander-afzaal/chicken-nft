@@ -275,6 +275,7 @@
   font-weight: bold;
   font-size: 4vh;
   color: white;
+  font-weight: 900;
 }
 @media screen and (max-width: 750px) {
   .landing-div {
@@ -390,11 +391,18 @@
     left: -500px;
     transition: all 1s ease-in-out;
     height: 100vh;
-    background-color: #0b8179;
-    width: 340px;
+    background-color: #0b8179bd;
+    width: 300px;
+    backdrop-filter: blur(5px);
     transform: none;
     z-index: 19;
     padding-top: 90px;
     overflow-y: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .left-btns {
+    width: 100%;
+    align-items: center;
   }
 }

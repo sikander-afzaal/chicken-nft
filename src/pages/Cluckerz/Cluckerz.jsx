@@ -33,6 +33,7 @@ const Cluckerz = () => {
           <img src="/egg-btn.png" alt="" className="btn-bg" />
         </Link>
       </div>
+      <img src="/my-text.png" className="my-text" alt="" />
     </div>
   );
 };

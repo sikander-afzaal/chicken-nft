@@ -80,7 +80,7 @@ const Landing = () => {
                   -
                 </p>
               </div>
-              <h3 className="amount">{mintAmount}</h3>
+              <h3 className="amount tenar">{mintAmount}</h3>
             </div>
           </div>
 
